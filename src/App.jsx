@@ -17,6 +17,9 @@ const App = () => {
     "https://cdn.pixabay.com/photo/2010/11/29/elephant-375_1280.jpg",
     "https://cdn.pixabay.com/photo/2017/09/09/12/09/india-2731817_1280.jpg",
     "https://cdn.pixabay.com/photo/2010/11/29/india-294_1280.jpg",
+    "https://cdn.pixabay.com/photo/2017/08/17/11/28/phi-phi-island-2650950_1280.jpg",
+    "./Banner/Nok-Air-Cabin-Crew.jpg",
+    "./Banner/seat.jpg",
     
   ];
 
