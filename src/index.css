@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: url(https://www.nokair.com/images/home/bg-offer.jpg);
+  background-size: cover;
+  background-position: center;
+}

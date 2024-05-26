@@ -1,0 +1,261 @@
+/* src/App.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slider-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider-image.next {
+  transform: translateX(100%);
+}
+
+.sliding.slider-image {
+  animation: slideIn 1s forwards;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.dot-container {
+  position: absolute;
+  right: 10vw;
+  bottom: 53vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: #ffd700;
+  padding: 5px; /* Reduced padding to minimize space */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0; /* Remove any margin */
+  position: fixed; /* Make the header fixed */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 30px;
+}
+
+.nav {
+  width: 100%;
+  margin: 0; /* Remove any margin */
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  font-weight: 700;
+  gap: 30px; /* Increased gap to provide more space between items */
+  margin: 0; /* Remove any margin */
+  padding: 0;
+  justify-content: space-between; /* Adjust to evenly space out the items */
+  width: 100%;
+}
+
+.dropdown-toggle {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1100; /* Ensure the dropdown appears in front of the hero banner */
+}
+
+.currency-dropdown-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.currency-dropdown {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.dropdown-item {
+  padding: 5px 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+button {
+  border: 2px solid #ffd700; /* Yellow border color */
+  padding: 5px 10px; /* Reduced padding for less space */
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+button:hover {
+  background-color: rgb(150, 227, 233); /* Light green background color on hover */
+  color: #290bb3;
+}
+
+button img.button-icon {
+  width: 20px; /* Set a fixed width for the icon */
+  height: auto;
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.main-content {
+  padding: 10px; /* Reduced padding */
+  background-color: #ffd700; /* Set the background color to match the booking form */
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 60px; /* Adjust margin to prevent overlap with the fixed header */
+}
+
+.button-group {
+  display: flex;
+  font-size: medium;
+  font-weight: 500;
+  justify-content: space-between;
+  background-color: #ffd700; /* Yellow background with transparency */
+  border-color: #d6f508ef;
+  padding: 5px 0; /* Reduce padding to minimize space */
+  margin: 0; /* Remove any margin */
+  margin-top: 10px; /* Add a small margin to move closer to the nav bar */
+}
+
+.primary-button {
+  background-color: #ffd700; /* Yellow background color */
+  color: #000; /* Black text color */
+}
+
+.secondary-button {
+  background-color: #ffd700;
+  color: #000; /* Black text color */
+}
+
+.clicked {
+  background-color: #FFFF00; /* Bright yellow when clicked */
+  color: #000; /* Keep text color black when clicked */
+}
+
+.flag-icon {
+  width: 35px; /* Reduced size */
+  height: auto;
+}
+
+.dropdown-image {
+  width: 70px; /* Adjust the size as needed */
+  height: auto;
+  margin-right: 5px; /* Add space between the image and the text */
+}
+
+.login-form {
+  background-color: #fff; /* White background */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  position: absolute;
+  right: 20px;
+  top: 50px; /* Position just below the navigation bar */
+  z-index: 1200; /* Ensure it appears above other elements */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form label {
+  font-size: 0.9em; /* Smaller font size */
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-button {
+  background-color: #9acd32; /* Yellow-green color */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}

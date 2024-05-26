@@ -1,0 +1,177 @@
+/* BookingForm.css */
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffd700;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px; /* Reduced top margin to move the form closer to the button group */
+}
+
+.trip-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px; /* Reduced margin bottom */
+  margin-top: 0; /* Removed margin top */
+}
+
+.trip-type {
+  display: flex;
+  gap: 20px;
+}
+
+.trip-type label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap; /* Prevent line wrapping */
+}
+
+.currency-dropdown-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.currency-dropdown {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 12px; /* Increased padding to increase the height */
+  height: auto; /* Ensure height auto adjusts with padding */
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Add this to ensure calendar details are displayed below the input field */
+.date-picker {
+  position: relative;
+  z-index: 1;
+}
+
+.booking-form .search-button {
+  background-color: #9acd32; /* Yellow-green color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  width: 100px; /* Standard size for the button */
+  align-self: flex-end; /* Align to the right-hand edge */
+}
+
+.small-checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.promo-item {
+  width: 22.4%; /* Reduced to 80% of original 23% */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.promo-item p {
+  font-weight: 700;
+  font-size: 1.0em; /* Increase font size */
+  margin-bottom: 10px; /* Add some space below the text */
+}
+
+.promo-image {
+  width: 100%; /* Ensure the image fills the promo-item */
+  height: 120px; /* Set a fixed height */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+  border-radius: 5px;
+  cursor: pointer; /* Add pointer cursor */
+}
+
+.promo-book-box {
+  background-color: #fff; /* White background */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding inside the box */
+  margin-top: 10px; /* Margin above the box */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative; /* Add this to position close icon */
+}
+
+.promo-book-box label {
+  font-size: 0.9em; /* Smaller font size */
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-book-box .checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.promo-book-box .checkbox-group label {
+  display: flex;
+  align-items: left; /* Align items vertically */
+  gap: 5px;
+  font-size: 0.8em; /* Smaller font size */
+}
+
+.promo-book-box .checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.promo-book-box button {
+  background-color: #9acd32; /* Yellow-green color */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.promo-book-box .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
