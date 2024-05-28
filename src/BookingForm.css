@@ -175,3 +175,33 @@ select {
   font-size: 20px;
   cursor: pointer;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .trip-options {
+    flex-direction: column;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-item {
+    width: 100%;
+  }
+
+  .booking-form {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-image {
+    height: 80px;
+  }
+}
