@@ -121,7 +121,7 @@ const App = () => {
                 </ul>
               )}
             </li>
-            <li>New Member Club</li>
+            <li>New Members Club</li>
             <li className="login-toggle" onClick={handleLoginToggle}>Member log in</li>
             <li>Other Services</li>
           </ul>
