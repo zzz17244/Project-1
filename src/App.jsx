@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import BookingForm from "./BookingForm.jsx";
+import PromotionList from "./components/PromotionList.jsx";
+
 import "./App.css";
 
 const App = () => {
@@ -12,7 +14,6 @@ const App = () => {
   const [isSliding, setIsSliding] = useState(false);
 
   const images = [
-    
     "https://cdn.pixabay.com/photo/2021/10/10/20/33/mehtab-bagh-6698669_1280.jpg",
     "https://media.istockphoto.com/id/1681951573/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%93%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A2%E0%B8%B2%E0%B8%A1%E0%B8%AD%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%95%E0%B8%A2%E0%B9%8C%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B9%83%E0%B8%99%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF.jpg?s=1024x1024&w=is&k=20&c=ItF8D9FJ5GvyQiSOJawCs_AKtLrk6swRwInBMWaNS2M=",
     "https://media.istockphoto.com/id/520086374/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E-%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7.jpg?s=612x612&w=0&k=20&c=wXU9S3x_iKZwuyD0mmDz3iG5oWiT2Qip_goA6RhIem4=",
@@ -20,7 +21,6 @@ const App = () => {
     "https://cdn.pixabay.com/photo/2017/08/17/11/28/phi-phi-island-2650950_1280.jpg",
     "./Banner/Nok-Air-Cabin-Crew.jpg",
     "./Banner/seat.jpg",
-    
   ];
 
   useEffect(() => {
@@ -122,19 +122,21 @@ const App = () => {
               )}
             </li>
             <li>New Members Club</li>
-            <li className="login-toggle" onClick={handleLoginToggle}>Member log in</li>
+            <li className="login-toggle" onClick={handleLoginToggle}>
+              Member log in
+            </li>
             <li>Other Services</li>
           </ul>
         </nav>
       </header>
-      <div className="relative flex justify-center items-center h-screen">
+      <div className="relative flex flex-col items-center h-screen">
         <div className="slider-container">
           <div
-            className={`slider-image ${isSliding ? 'sliding' : ''}`}
+            className={`slider-image ${isSliding ? "sliding" : ""}`}
             style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
           ></div>
           <div
-            className={`slider-image next ${isSliding ? 'sliding' : ''}`}
+            className={`slider-image next ${isSliding ? "sliding" : ""}`}
             style={{ backgroundImage: `url(${images[nextImageIndex]})` }}
           ></div>
         </div>
@@ -147,7 +149,7 @@ const App = () => {
             ></span>
           ))}
         </div>
-        <div className="relative w-4/5 rounded-lg shadow-lg z-10 mt-[110vh]">
+        <div className="relative w-4/5 rounded-lg shadow-lg z-10 mt-[40vh]">
           <div className="rounded shadow-md">
             <main className="main-content">
               <div className="button-group">
@@ -201,16 +203,36 @@ const App = () => {
             </main>
           </div>
         </div>
+
+        <div className="w-full mt-8 flex justify-center ">
+          <PromotionList />
+        </div>
       </div>
       {showLoginForm && (
         <div className="login-form">
-          <span className="close-icon" onClick={handleLoginToggle}>×</span>
+          <span className="close-icon" onClick={handleLoginToggle}>
+            ×
+          </span>
           <label htmlFor="email">Your Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
           <label htmlFor="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" />
-          <button type="submit" className="login-button">Submit</button>
-          <a href="#" className="forgot-password">Forgot Password?</a>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+          />
+          <button type="submit" className="login-button">
+            Submit
+          </button>
+          <a href="#" className="forgot-password">
+            Forgot Password?
+          </a>
         </div>
       )}
     </div>
