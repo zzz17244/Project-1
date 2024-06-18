@@ -73,20 +73,33 @@ const BookingForm = () => {
           <label htmlFor="from">From</label>
           <input type="text" id="from" name="from" placeholder="Select Origin" list="from-options" />
           <datalist id="from-options">
-            <option value="HYD - Hyderabad" />
-            <option value="BLR - Bangalore" />
-            <option value="DEL - Delhi" />
+               <option value="BOM - Bombay" />
+              <option value="DEL - Delhi" />
+              <option value="HYD - Hyderabad" />
+              <option value="DMK - Don Mueang" />
+              <option value="CNX - Chiang Mai" />
+              <option value="CEI - Chiang Rai" />
+              <option value="HKT - Phuket" />
+              <option value="KBV - Krabi" />
+
           </datalist>
         </div>
         <div className="form-group">
           <label htmlFor="to">To</label>
           <input type="text" id="to" name="to" placeholder="Select Destination" list="to-options" />
           <datalist id="to-options">
-            <option value="DMK - Don Mueang" />
-            <option value="CNX - Chiang Mai" />
-            <option value="CEI - Chiang Rai" />
-            <option value="HKT - Phuket" />
-            <option value="KBV - Krabi" />
+          <option value="DMK - Don Mueang" />
+                  <option value="CNX - Chiang Mai" />
+                  <option value="CEI - Chiang Rai" />
+                  <option value="HKT - Phuket" />
+                  <option value="KBV - Krabi" />
+                  <option value="SIN - Singapore Changi" />
+                  <option value="KUL - Kuala Lumpur International" />
+                  <option value="RGN - Yangon" />
+                  <option value="JKT - Jakarta Soekarno-Hatta" />
+                  <option value="SYD - Sydney" />
+                  <option value="MEL - Melbourne" />
+                  <option value="AKL - Auckland" />
           </datalist>
         </div>
       </div>

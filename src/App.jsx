@@ -14,13 +14,16 @@ const App = () => {
   const [isSliding, setIsSliding] = useState(false);
 
   const images = [
-    "https://cdn.pixabay.com/photo/2021/10/10/20/33/mehtab-bagh-6698669_1280.jpg",
-    "https://media.istockphoto.com/id/1681951573/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%A3%E0%B8%B8%E0%B8%93%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A7%E0%B8%A3%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A2%E0%B8%B2%E0%B8%A1%E0%B8%AD%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%95%E0%B8%A2%E0%B9%8C%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B9%83%E0%B8%99%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%AF.jpg?s=1024x1024&w=is&k=20&c=ItF8D9FJ5GvyQiSOJawCs_AKtLrk6swRwInBMWaNS2M=",
+    "https://t1.blockdit.com/photos/2019/02/5c644f432bcd0b18cb5d70db_800x0xcover_ZRIObe80.jpg",
+    "https://images.workpointtoday.com/workpointnews/2022/04/19204738/1650376055_55622_1.jpg",
+    "https://resource.nationtv.tv/uploads/images/md/2022/07/Bp4VA9iAHy5UR4zxsXCq.webp",
     "https://media.istockphoto.com/id/520086374/th/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%96%E0%B9%88%E0%B8%B2%E0%B8%A2/%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E-%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7.jpg?s=612x612&w=0&k=20&c=wXU9S3x_iKZwuyD0mmDz3iG5oWiT2Qip_goA6RhIem4=",
-    "https://cdn.pixabay.com/photo/2010/11/29/india-294_1280.jpg",
+    "https://www.govivigo.com/content/upload/images/Elephant%20Camp/Elephant-Camp-Ayutthaya.jpg",
     "https://cdn.pixabay.com/photo/2017/08/17/11/28/phi-phi-island-2650950_1280.jpg",
     "./Banner/Nok-Air-Cabin-Crew.jpg",
     "./Banner/seat.jpg",
+    "https://images.workpointtoday.com/workpointnews/2022/04/19204738/1650376055_55622_1.jpg",
+    "https://f.tpkcdn.com/review-source/2960197e-1405-e05f-fa8a-528f211c8ca6.jpg",
   ];
 
   useEffect(() => {
